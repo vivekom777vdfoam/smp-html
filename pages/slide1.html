@@ -9,8 +9,10 @@
                 <img src="images/correct-green-icon.svg" alt="Icon" /> Staten Island, NY
               </div>
               <div class="combined-fields">
-                <input type="text" id="zip_code_from" class="input-field" maxlength="5" placeholder="Enter Zip" onkeydown="slide1_input()">
-                <button class="btn load-content" data-url="slide2.html" onclick="slide1()">Go</button>
+                <div class="autocomplete">
+                  <input type="text" id="zip_code_from" name="myCountry" class="input-field" maxlength="5" placeholder="Enter Zip" onkeydown="slide1_input()">
+                  <button class="btn load-content" data-url="slide2.html" onclick="slide1()">Go</button>
+                </div>
               </div>
               <div class="current-location">
                 <img src="images/location-black-icon.svg" alt="Icon" /> Current Location

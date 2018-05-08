@@ -1078,3 +1078,52 @@ input[type='date'] {
   .datepicker-panel > ul[data-view="week"] > li,
   .datepicker-panel > ul[data-view="week"] > li:hover { font-size: 18px; }
 }
+
+
+/**
+ * Autocomplete - javascript
+ */
+.autocomplete {
+  /*the container must be positioned relative:*/
+  float: left;
+  position: relative;
+  display: inline-block;
+}
+.autocomplete-items {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  left: 0;
+  z-index: 99;
+  margin: 1px 0 0;
+  padding: 10px 0px;
+  border: 1px solid #D4D4D4;
+  border-bottom: none;
+  border-top: none;
+  background-color: #FFF;
+  overflow: hidden;
+  -webkit-border-radius: 20px;
+     -moz-border-radius: 20px;
+          border-radius: 20px;
+}
+.autocomplete-items div {
+  padding: 10px;
+  cursor: pointer;
+  background-color: #FFF;
+  border-bottom: 1px solid #D4D4D4;
+  color: #000;
+}
+.autocomplete-items div:nth-child(1) { border-top: 1px solid #D4D4D4; }
+.autocomplete-items div:hover {
+  margin: -1px;
+  padding: 11px;
+  /*when hovering an item:*/
+  background-color: #3DB771;
+  color: #FFF;
+}
+.autocomplete-active {
+  /*when navigating through the items using the arrow keys:*/
+  background-color: DodgerBlue !important;
+  color: #FFF;
+}
+/* End */
